@@ -6,10 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accordion</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="wrapper">
+        <main>
+            <section class="section__accordion container">
+                <h1 class="visually-hidden">Аккордион</h1>
+                <ul class="section__list">
+                    <li class="section__item accordion">
+                        <button class="section__btn" type="button">
+                            <span class="section__btn-text">Lorem, ipsum dolor.</span>
+                            <svg class="section__chevron" width="14" height="7" viewBox="0 0 14 7" role="img">
+                                <path stroke-width="1.5" d="M13 1L7 6 1 1"></path>
+                            </svg>
+                        </button>
+                        <div class="section__content accordion__content">
+                            <div class="section__content-wrapper">
+                                <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laborum.
+                                </p>
+                                <p class="section__text">Lorem ipsum dolor sit, amet consectetur <b>Lorem, ipsum.</b>.
+                                    Minima
+                                    labore consequatur
+                                    doloremque maxime.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="section__item accordion">
+                        <button class="section__btn" type="button">
+                            <span class="section__btn-text">Lorem, ipsum dolor.</span>
+                            <svg class="section__chevron" width="14" height="7" viewBox="0 0 14 7" role="img">
+                                <path stroke-width="1.5" d="M13 1L7 6 1 1"></path>
+                            </svg>
+                        </button>
+                        <div class="section__content accordion__content">
+                            <div class="section__content-wrapper">
+                                <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Laborum.
+                                </p>
+                                <p class="section__text">Lorem ipsum dolor sit, amet consectetur <b>Lorem, ipsum.</b>.
+                                    Minima
+                                    labore consequatur
+                                    doloremque maxime.</p>
+                                <p class="section__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia?
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 
