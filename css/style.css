@@ -44,7 +44,6 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-
   padding: 10px 15px;
   background-color: white;
   border: none;
@@ -80,7 +79,6 @@
 .section__content {
   max-height: 0;
   overflow: hidden;
-
   transition: max-height 0.3s ease;
 }
 .section__content-wrapper {
