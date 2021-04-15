@@ -1,21 +1,37 @@
-const accordion = document.querySelectorAll(".accordion");
+window.onload = () => {
+  const initAccordion = () => {
+    const accordion = document.querySelectorAll(".accordion");
+    if (accordion) {
+      accordion.forEach(function (item) {
+        const btn = item.children[0];
+        const content = item.children[1];
 
-accordion.forEach(function (item) {
-  const btn = item.children[0];
-  const content = item.children[1];
-  const parent = item.closest(".accordion__content");
-
-  btn.addEventListener("click", (evt) => {
-    evt.preventDefault();
-
-    const maxHeight = content.style.maxHeight;
-
-    if (maxHeight) {
-      content.style.maxHeight = null;
-      btn.classList.remove("active");
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-      btn.classList.add("active");
+        btn.addEventListener("click", (evt) => {
+          evt.preventDefault();
+          const maxHeight = content.style.maxHeight;
+          if (maxHeight) {
+            content.style.maxHeight = null;
+            btn.classList.remove("active");
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            btn.classList.add("active");
+          }
+        });
+      });
     }
-  });
-});
+  };
+
+  const renderList = () => {
+    let container = document.querySelector(".section__list");
+    let randomNum = Math.floor(Math.random() * 8 + 2);
+    let element = document.querySelector(".accordion");
+
+    for (let i = 0; i < randomNum; i++) {
+      let clone = element.cloneNode(true);
+      container.append(clone);
+    }
+    initAccordion();
+  };
+
+  renderList();
+};
