@@ -81,7 +81,7 @@
   max-height: 0;
   overflow: hidden;
 
-  transition: height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 .section__content-wrapper {
   margin-top: 10px;
