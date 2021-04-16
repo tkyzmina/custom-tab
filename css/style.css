@@ -70,8 +70,10 @@
 }
 .section__btn-text {
   margin-right: 15px;
+  text-align: left;
 }
 .section__chevron {
+  flex-shrink: 0;
   stroke: #ce3829;
   fill: none;
   transition: stroke 0.3s ease, transform 0.3s ease;
@@ -89,4 +91,5 @@
 }
 .section__text {
   padding: 0;
+  text-align: left;
 }
